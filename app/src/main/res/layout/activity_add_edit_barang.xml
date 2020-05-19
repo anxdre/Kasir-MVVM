@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".ui.barang.AddEditBarangActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Barang :"
+        android:textColor="#000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Nama Barang" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga Barang :"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <EditText
+            android:id="@+id/et_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Harga Barang" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Stok Barang : "
+            android:textColor="#000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tv_stok"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_edit_stok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:text="Tambah Stok Barang : "
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_stok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Stok Barang"/>
+
+<!--    <NumberPicker-->
+<!--        android:id="@+id/np_stok"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="8dp"-->
+<!--        android:layout_marginTop="15dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_namaBarang"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="barang"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/jumlah_tambah"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Jumlah Tambah = "-->
+<!--            android:layout_below="@id/tv_namaBarang"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_jumlah_tambah"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tv_namaBarang"-->
+<!--            android:layout_toRightOf="@id/jumlah_tambah"-->
+<!--            android:text="0"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/jumlah_pengurangan"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Jumlah Pengurangan = "-->
+<!--            android:layout_below="@id/jumlah_tambah"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_jumlah_pengurangan"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/jumlah_tambah"-->
+<!--            android:layout_toRightOf="@id/jumlah_pengurangan"-->
+<!--            android:text="0"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/jumlah_stok"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Jumlah Stok = "-->
+<!--            android:layout_below="@id/jumlah_pengurangan"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_jumlah_stok"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/jumlah_pengurangan"-->
+<!--            android:layout_toRightOf="@id/jumlah_stok"-->
+<!--            android:text="0"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/jumlah_stok_akhir"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Jumlah Stok Akhir = "-->
+<!--            android:layout_below="@id/jumlah_stok"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_jumlah_stok_akhir"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/jumlah_stok"-->
+<!--            android:layout_toRightOf="@id/jumlah_stok_akhir"-->
+<!--            android:text="0"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/penyesuaian"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Penyesuaian = "-->
+<!--            android:layout_below="@id/jumlah_stok_akhir"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_penyesuaian"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/jumlah_stok_akhir"-->
+<!--            android:layout_toRightOf="@id/penyesuaian"-->
+<!--            android:text="0"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>-->
+
+<!--    </RelativeLayout>-->
+
+</LinearLayout>

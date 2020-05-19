@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_namaBarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="barang"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/jumlah_tambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Tambah = "
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/tv_namaBarang"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/tv_jumlah_tambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_namaBarang"
+            android:layout_toRightOf="@id/jumlah_tambah"
+            android:layout_marginTop="18dp"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/jumlah_pengurangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Pengurangan = "
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/jumlah_tambah"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/tv_jumlah_pengurangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jumlah_tambah"
+            android:layout_toRightOf="@id/jumlah_pengurangan"
+            android:layout_marginTop="18dp"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/jumlah_stok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Jumlah Stok = "
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/jumlah_pengurangan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/tv_jumlah_stok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jumlah_pengurangan"
+            android:layout_toRightOf="@id/jumlah_stok"
+            android:layout_marginTop="18dp"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/jumlah_stok_akhir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Jumlah Stok Akhir = "
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/jumlah_stok"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/tv_jumlah_stok_akhir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jumlah_stok"
+            android:layout_toRightOf="@id/jumlah_stok_akhir"
+            android:layout_marginTop="18dp"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/penyesuaian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penyesuaian = "
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/jumlah_stok_akhir"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/tv_penyesuaian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jumlah_stok_akhir"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@id/penyesuaian"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
